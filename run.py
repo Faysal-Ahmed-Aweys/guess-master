@@ -11,3 +11,17 @@ def ask_for_a_number():
 
 integer = ask_for_a_number()
 print(f"Your number is {integer}")
+
+def try_again_():
+    while True:
+            try_again = input("Would you like to try again? y/n ")
+            if try_again.lower() == "y":
+                integer = ask_for_a_number()
+                print(f"Your number is {integer}")
+            elif try_again.lower() == "n":
+                print("Game over")
+                break
+            else:
+                print("You should input either y/n")
+
+try_again_()
