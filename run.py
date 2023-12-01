@@ -1,13 +1,20 @@
 import random
+from os import system
+
+
+def clear():
+    system('clear')
 
 
 def try_again_():
     while True:
         try_again = input("Would you like to try again? y/n\n")
         if try_again.lower() == "y":
+            clear()
             random_number = generate_random_number()
             ask_for_a_number(random_number)
         elif try_again.lower() == "n":
+            clear()
             welcome()
             break
         else:
@@ -15,6 +22,7 @@ def try_again_():
 
 
 def ask_for_a_number(rand_number):
+    clear()
     attempts = 3
     print(f"{attempts} chance(s) left")
     while True:
@@ -73,10 +81,12 @@ you need to guess a number lower than the number you guessed.
     while True:
         start_game = input("Would you like to start the game? y/n\n")
         if start_game.lower() == "y":
+            clear()
             random_number = generate_random_number()
             ask_for_a_number(random_number)
             break
         elif start_game.lower() == "n":
+            clear()
             welcome()
             break
         else:
@@ -91,9 +101,9 @@ def welcome():
     """)
 
     print("""
-select an option:
-1. Start game
-2. Game rules
+SELECT AN OPTION:
+1. START GAME
+2. GAME RULES
     """)
 
     while True:
