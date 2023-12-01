@@ -1,32 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Guess Master**
 
-Welcome,
+Guess master is a game where the player tries to guess the number that the computer is thinking of in 3 tries.
+The computer tells them the range and if they guess a number higher than the number that computer is thinking of, the computer tells them to go lower and if they guess a lower number, the computer tells them to go higher.
+If they guess the number before the tries finish, they win otherwise they lose.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+## **Planning stage** 
+### **Target Audience**
+* Anyone who likes to play guess-the-number games.
+* Anyone who likes challenges.
 
-## Reminders
+### **Site Aims**
+1. Make a fun guess-the-number game
+2. Make the game with clear instructions on how to play and where user input is required.
+3. Handle errors caused by player inputs and avoid crushing due to wrong inputs by the players. 
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+### **User stories** 
+* Play a fun guess-the-number game
+* If the guess of the number is wrong, a hint should be given to the player to improve the guess.
+* The player should know the range of the numbers that the guess should be within.
+* If the player fails, the number should be displayed. 
+* Limit the number of tries the player gets to guess the number to make the game more fun. 
 
-## Creating the Heroku app
+### **The plan to achieve the goals** 
+* Build the game with clear instructions guiding the players on how to input and display clear feedback following correct or incorrect user input. 
+* Make the game fun by adding a number of tries which the player gets to guess the number that resets each time they start the game. 
+* Make the game fun by also adding a hint following each wrong guess.
+* Display the range of the number to be guessed and display the number if the player is right or if the tries run out. 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+ 
