@@ -20,6 +20,36 @@ def ask_for_a_number(randNumber):
             print("You should input a number")
     return number
 
+
+def gameRules():
+    print("""
+                        Game Rules
+                        ----------
+
+    - The game rules are simple and straightforward.
+    - The computer is thinking of a number, it will tell you the range.
+    - Your job is to guess what the number is. 
+    - If you guess a lower number, the computer will tell you higher which means 
+      you need to guess a number higher than the number you guessed. 
+    - If you guess a higher number, the computer will tell you lower which means 
+      you need to guess a number lower than the number you guessed.
+    - here is the catch though, you have only three chances to guess what the number is!
+
+                    HAVE FUN!!!
+    """)
+
+    while True:
+        start_game = input("Would you like to start the game? y/n ")
+        if start_game.lower() == "y":
+            generate_random_number()
+            break
+        elif start_game.lower() == "n":
+            welcome()
+            break
+        else:
+            print("You should input either y/n")
+
+
 def welcome():
     print("""
     ~~~ Hello and welcome ~~~
@@ -38,6 +68,7 @@ select an option:
                 generate_random_number()
                 break
             elif type(chosen_option) == int and chosen_option == 2:
+                gameRules()
                 break
         except ValueError:
             print("please enter a number")
