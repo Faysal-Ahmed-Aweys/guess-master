@@ -24,27 +24,27 @@ def try_again_():
 def ask_for_a_number(rand_number):
     clear()
     attempts = 3
-    print(f"{attempts} chance(s) left")
+    print(f"{attempts} chance(s) left\n")
     while True:
         try:
             number = int(input("Guess a number (between 0 and 10):\n"))
             if type(number) == int and number == rand_number:
-                print("You got it, Well done!!")
-                print(f"The number is {rand_number}")
+                print("\nYou got it, Well done!!")
+                print(f"The number is {rand_number}\n")
                 try_again_()
             elif type(number) == int and number < rand_number and attempts != 1:
                 attempts -= 1
-                print("Higher")
-                print(f"{attempts} chance(s) left")
+                print("\nHigher")
+                print(f"{attempts} chance(s) left\n")
             elif type(number) == int and number > rand_number and attempts != 1:
                 attempts -= 1
-                print("lower")
-                print(f"{attempts} chance(s) left")
+                print("\nlower")
+                print(f"{attempts} chance(s) left\n")
             elif attempts <= 1:
                 attempts -= 1
-                print(f"{attempts} chance(s) left")
+                print(f"\n{attempts} chance(s) left")
                 print("Game over")
-                print(f"The number is {rand_number}")
+                print(f"The number is {rand_number}\n")
                 try_again_()
         except ValueError:
             print("You should input a number")
@@ -100,6 +100,7 @@ def welcome():
 
     print("""
 SELECT AN OPTION:
+
 1. START GAME
 2. GAME RULES
     """)
