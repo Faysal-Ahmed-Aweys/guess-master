@@ -20,6 +20,29 @@ def ask_for_a_number(randNumber):
             print("You should input a number")
     return number
 
+def welcome():
+    print("""
+    ~~~ Hello and welcome ~~~
+    """)
+
+    print("""
+select an option:
+1. Start game 
+2. Game rules
+    """)
+    while True:
+        try:
+            chosen_option = int(input("type 1 or 2: "))
+            type(chosen_option) == int
+            if type(chosen_option) == int and chosen_option == 1:
+                generate_random_number()
+                break
+            elif type(chosen_option) == int and chosen_option == 2:
+                break
+        except ValueError:
+            print("please enter a number")
+
+welcome()
 random_number = generate_random_number()
 print(random_number)
 integer = ask_for_a_number(random_number)
@@ -32,7 +55,7 @@ def try_again_():
             print(random_number)
             ask_for_a_number(random_number)
         elif try_again.lower() == "n":
-            print("You're done")
+            print("game over")
             break
         else:
             print("You should input either y/n")
