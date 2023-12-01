@@ -3,10 +3,9 @@ import random
 
 def try_again_():
     while True:
-        try_again = input("Would you like to try again? y/n ")
+        try_again = input("Would you like to try again? y/n\n")
         if try_again.lower() == "y":
             random_number = generate_random_number()
-            print(random_number)
             ask_for_a_number(random_number)
         elif try_again.lower() == "n":
             welcome()
@@ -20,7 +19,7 @@ def ask_for_a_number(rand_number):
     print(f"{attempts} chance(s) left")
     while True:
         try:
-            number = int(input("Guess a number (between 0 and 10): "))
+            number = int(input("Guess a number (between 0 and 10):\n"))
             if type(number) == int and number == rand_number:
                 print("Okay, You're right. Well done!!")
                 print(f"The number is {rand_number}")
@@ -72,10 +71,9 @@ you need to guess a number lower than the number you guessed.
     """)
 
     while True:
-        start_game = input("Would you like to start the game? y/n ")
+        start_game = input("Would you like to start the game? y/n\n")
         if start_game.lower() == "y":
             random_number = generate_random_number()
-            print(random_number)
             ask_for_a_number(random_number)
             break
         elif start_game.lower() == "n":
@@ -98,10 +96,9 @@ select an option:
 
     while True:
         try:
-            chosen_option = int(input("type 1 or 2: "))
+            chosen_option = int(input("type 1 or 2:\n"))
             if type(chosen_option) == int and chosen_option == 1:
                 random_number = generate_random_number()
-                print(random_number)
                 ask_for_a_number(random_number)
                 break
             elif type(chosen_option) == int and chosen_option == 2:
