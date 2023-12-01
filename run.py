@@ -94,9 +94,9 @@ def welcome():
     row2 = "║ ╦│ │├┤ └─┐└─┐   │ ├─┤├┤   ││││ ││││├┴┐├┤ ├┬┘"
     row3 = "╚═╝└─┘└─┘└─┘└─┘   ┴ ┴ ┴└─┘  ┘└┘└─┘┴ ┴└─┘└─┘┴└─"
 
-    print(row1.center(100))
-    print(row2.center(100))
-    print(row3.center(100))
+    print(row1.center(50))
+    print(row2.center(50))
+    print(row3.center(50))
 
     print("""
 SELECT AN OPTION:
