@@ -3,16 +3,26 @@ from os import system
 
 
 def clear():
+    """
+    Clears the terminal whenever it is called.
+    """
+
     system('clear')
 
 
 def try_again_():
+    """
+    Asks the user whether they would like to try again.
+    handles and validates user input. Guides user if user input is wrong.
+    based on user input, start_game or welcome function is called.
+    """
+
     while True:
         try_again = input("Would you like to try again? y/n\n")
         if try_again.lower() == "y":
             clear()
             random_number = generate_random_number()
-            ask_for_a_number(random_number)
+            start_game(random_number)
         elif try_again.lower() == "n":
             clear()
             welcome()
@@ -21,7 +31,15 @@ def try_again_():
             print("You should input either y/n")
 
 
-def ask_for_a_number(rand_number):
+def start_game(rand_number):
+    """
+    Takes in random number from generate_random_number function.
+    Resets attempts to guess the number.
+    Asks the player to guess a number.
+    handles and validates user input.
+    Based on user input, the player either wins or higher or lower is displayed.
+    If the player wins or loses, try_again function is called.
+    """
     clear()
     attempts = 3
     print(f"{attempts} chance(s) left\n")
@@ -51,11 +69,21 @@ def ask_for_a_number(rand_number):
 
 
 def generate_random_number():
+    """
+    Generates a random number between 0 and 10 inclusive.
+    """
+
     rand_number = int(random.randint(0, 10))
     return rand_number
 
 
 def game_rules():
+    """
+    Displays game rules and asks the user whether to start the game or not.
+    Handles and verifies user input. raises an error if user input is wrong.
+    based on what option is chosen, the start_game or welcome function is called.
+    """
+
     print("""
                         Game Rules
                         ----------
@@ -74,13 +102,13 @@ def game_rules():
     """)
 
     while True:
-        start_game = input("Would you like to start the game? y/n\n")
-        if start_game.lower() == "y":
+        game_start = input("Would you like to start the game? y/n\n")
+        if game_start.lower() == "y":
             clear()
             random_number = generate_random_number()
-            ask_for_a_number(random_number)
+            start_game(random_number)
             break
-        elif start_game.lower() == "n":
+        elif game_start.lower() == "n":
             clear()
             welcome()
             break
@@ -89,7 +117,11 @@ def game_rules():
 
 
 def welcome():
-
+    """
+    Displays title of the game and options of start game and game rules.
+    Handles and verifies user input. raises an error if user input is wrong.
+    based on what option is chosen, the start_game or game_rules function is called.
+    """
     row1 = "╔═╗┬ ┬┌─┐┌─┐┌─┐  ┌┬┐┬ ┬┌─┐  ┌┐┌┬ ┬┌┬┐┌┐ ┌─┐┬─┐"
     row2 = "║ ╦│ │├┤ └─┐└─┐   │ ├─┤├┤   ││││ ││││├┴┐├┤ ├┬┘"
     row3 = "╚═╝└─┘└─┘└─┘└─┘   ┴ ┴ ┴└─┘  ┘└┘└─┘┴ ┴└─┘└─┘┴└─"
@@ -110,9 +142,11 @@ SELECT AN OPTION:
             chosen_option = int(input("Type 1 or 2:\n"))
             if type(chosen_option) == int and chosen_option == 1:
                 random_number = generate_random_number()
-                ask_for_a_number(random_number)
+                clear()
+                start_game(random_number)
                 break
             elif type(chosen_option) == int and chosen_option == 2:
+                clear()
                 game_rules()
                 break
         except ValueError:
