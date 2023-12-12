@@ -34,6 +34,7 @@ def try_again_():
 
 
 def start_game(rand_number):
+    guessed_list = []
     """
     Takes in random number from generate_random_number function.
     Resets attempts to guess the number.
@@ -52,13 +53,20 @@ def start_game(rand_number):
                 print("\nYou got it, Well done!!")
                 print(f"The number is {rand_number}\n")
                 try_again_()
+            elif number in guessed_list:
+                print(f"\nyou already guessed {number}")
+                print(f"{attempts} chance(s) left\n")
             elif type(number) == int and number < rand_number and attempts != 1:
                 attempts -= 1
                 print("\nHigher")
+                guessed_list.append(number)
+                print(guessed_list)
                 print(f"{attempts} chance(s) left\n")
             elif type(number) == int and number > rand_number and attempts != 1:
                 attempts -= 1
                 print("\nlower")
+                guessed_list.append(number)
+                print(guessed_list)
                 print(f"{attempts} chance(s) left\n")
             elif attempts <= 1:
                 attempts -= 1
