@@ -1,5 +1,7 @@
 import random
 from os import system
+import emoji
+from rich import print
 
 
 def clear():
@@ -113,7 +115,7 @@ def game_rules():
             welcome()
             break
         else:
-            print("You should input either y/n")
+            print("[blue]You[/blue] should input either y/n")
 
 
 def welcome():
@@ -127,7 +129,7 @@ def welcome():
     row3 = "╚═╝└─┘└─┘└─┘└─┘   ┴ ┴ ┴└─┘  ┘└┘└─┘┴ ┴└─┘└─┘┴└─"
 
     print(row1.center(50))
-    print(row2.center(50))
+    print(row2.center(50), emoji.emojize(":brain:"))
     print(row3.center(50))
 
     print("""
