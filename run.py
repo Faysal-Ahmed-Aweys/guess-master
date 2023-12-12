@@ -57,17 +57,25 @@ def start_game(rand_number):
                 print(f"\nyou already guessed {number}")
                 print(f"{attempts} chance(s) left\n")
             elif type(number) == int and number < rand_number and attempts != 1:
-                attempts -= 1
-                print("\nHigher")
-                guessed_list.append(number)
-                print(guessed_list)
-                print(f"{attempts} chance(s) left\n")
+                if number >= 0 and number <= 10:
+                    attempts -= 1
+                    print("\nHigher")
+                    guessed_list.append(number)
+                    print(guessed_list)
+                    print(f"{attempts} chance(s) left\n")
+                else:
+                    print("the number is not between 0 and 10")
+                    print(f"{attempts} chance(s) left\n")
             elif type(number) == int and number > rand_number and attempts != 1:
-                attempts -= 1
-                print("\nlower")
-                guessed_list.append(number)
-                print(guessed_list)
-                print(f"{attempts} chance(s) left\n")
+                if number >= 0 and number <= 10:
+                    attempts -= 1
+                    print("\nlower")
+                    guessed_list.append(number)
+                    print(guessed_list)
+                    print(f"{attempts} chance(s) left\n")
+                else:
+                    print("the number is not between 0 and 10")
+                    print(f"{attempts} chance(s) left\n")
             elif attempts <= 1:
                 attempts -= 1
                 print(f"\n{attempts} chance(s) left")
