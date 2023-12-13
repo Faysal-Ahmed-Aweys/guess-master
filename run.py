@@ -106,15 +106,17 @@ def game_rules():
                         Game Rules
                         ----------
 
-- The game rules are simple and straightforward.
-- The computer is thinking of a number and it will tell you the range.
-- Your job is to guess what the number is.
-- If you guess a lower number, the computer will tell you higher which means
-  you need to guess a number higher than the number you guessed.
-- If you guess a higher number, the computer will tell you lower which means
-  you need to guess a number lower than the number you guessed.
+- You have to guess a number within a certain range 
+  (for example between 0 and 10 inclusive).
+- If you guess a lower number, the computer will tell you "guess a higher number"
+  which means you need to guess a number higher than the number you guessed.
+- If you guess a higher number, the computer will tell you "guess a lower number"
+  which means you need to guess a number lower than the number you guessed.
+- You cannot guess the same number twice.
+- You cannot guess a number outside of the range.
 - If you guess the right number you win!
-- You have only three chances to guess what the number is!
+- If you fail to guess the number after a specified number of tries/chances you lose!
+
 
                     HAVE FUN!!!
     """)
