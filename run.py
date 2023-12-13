@@ -3,6 +3,7 @@ from os import system
 import emoji
 # from rich import print
 
+
 def clear():
     """
     Clears the terminal whenever it is called.
@@ -132,7 +133,10 @@ def game_rules():
         else:
             print("[blue]You[/blue] should input either y/n")
 
+
 clear()
+
+
 def welcome():
     """
     Displays title of the game and options of start game and game rules.
@@ -143,9 +147,9 @@ def welcome():
     row2 = "║ ╦│ │├┤ └─┐└─┐   │ ├─┤├┤   ││││ ││││├┴┐├┤ ├┬┘"
     row3 = "╚═╝└─┘└─┘└─┘└─┘   ┴ ┴ ┴└─┘  ┘└┘└─┘┴ ┴└─┘└─┘┴└─"
 
-    print(row1.center(70))
-    print(row2.center(70))
-    print(row3.center(70))
+    print(row1.center(73))
+    print(row2.center(73))
+    print(row3.center(73))
 
     print("""
 SELECT AN OPTION:

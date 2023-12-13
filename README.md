@@ -27,5 +27,8 @@ If they guess the number before the tries finish, they win otherwise they lose.
 * Make the game fun by also adding a hint following each wrong guess.
 * Display the range of the number to be guessed and display the number if the player is right or if the tries run out. 
 
+## **Game Flow chart**
+![Game Flowchart](screenshots/lucid-chart-screenshot.png)
+ 
 
  
