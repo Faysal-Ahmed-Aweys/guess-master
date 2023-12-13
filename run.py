@@ -59,7 +59,7 @@ def start_game(rand_number):
             elif type(number) == int and number < rand_number and attempts != 1:
                 if number >= 0 and number <= 10:
                     attempts -= 1
-                    print(emoji.emojize("\nGuess a higher number :index_pointing_up:"))
+                    print(emoji.emojize("\nGuess a higher number :up_arrow:"))
                     guessed_list.append(number)
                     print(f"{attempts} chance(s) left\n")
                 else:
@@ -68,7 +68,7 @@ def start_game(rand_number):
             elif type(number) == int and number > rand_number and attempts != 1:
                 if number >= 0 and number <= 10:
                     attempts -= 1
-                    print(emoji.emojize("\nGuess a lower number :backhand_index_pointing_down:"))
+                    print(emoji.emojize("\nGuess a lower number :down_arrow:"))
                     guessed_list.append(number)
                     print(f"{attempts} chance(s) left\n")
                 else:
