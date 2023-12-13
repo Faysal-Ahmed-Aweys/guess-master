@@ -30,6 +30,41 @@ If they guess the number before the tries finish, they win otherwise they lose.
 ## **Game Flow chart**
 ![Game Flowchart](screenshots/lucid-chart-screenshot.png)
 
+## **Game Features**
+
+### **Welcome page**
+![welcome page](screenshots/welcome_page.png)
+
+### **Game-rules page**
+![game rules page](screenshots/game_rules_page.png)
+
+### **Welcome page error handling**
+![welcome page errors](screenshots/welcome_page_errors.png)
+
+### **Game-rules page error handling**
+![game rules page errors](screenshots/game_rules_errors.png)
+
+### **Gameplay page**
+![game page](screenshots/game_page.png)
+
+### **Gameplay page error handling**
+![game page errors](screenshots/game_play_errors.png)
+
+### **Higher hint display**
+![higher hint display](screenshots/higher_hint_display.png)
+
+### **Lower hint display**
+![lower hint display](screenshots/lower_hint_display.png)
+
+### **Win display**
+![win display](screenshots/win_display.png)
+
+### **Lose display**
+![lose display](screenshots/lose_display.png)
+
+### **Duplicate number error handling**
+![duplicate number error](screenshots/duplicate_number_error.png)
+
 ## **Deployment**
 I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
 
