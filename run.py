@@ -143,9 +143,9 @@ def welcome():
     row2 = "║ ╦│ │├┤ └─┐└─┐   │ ├─┤├┤   ││││ ││││├┴┐├┤ ├┬┘"
     row3 = "╚═╝└─┘└─┘└─┘└─┘   ┴ ┴ ┴└─┘  ┘└┘└─┘┴ ┴└─┘└─┘┴└─"
 
-    print(row1.center(50))
-    print(row2.center(50), emoji.emojize(":brain:"))
-    print(row3.center(50))
+    print(row1.center(60))
+    print(row2.center(60), emoji.emojize(":brain:"))
+    print(row3.center(60))
 
     print("""
 SELECT AN OPTION:
