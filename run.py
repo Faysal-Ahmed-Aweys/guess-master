@@ -1,8 +1,7 @@
 import random
 from os import system
 import emoji
-from rich import print
-
+# from rich import print
 
 def clear():
     """
@@ -133,7 +132,7 @@ def game_rules():
         else:
             print("[blue]You[/blue] should input either y/n")
 
-
+clear()
 def welcome():
     """
     Displays title of the game and options of start game and game rules.
