@@ -27,7 +27,6 @@ def try_again_():
         elif try_again.lower() == "n":
             clear()
             welcome()
-            break
         else:
             print("You should input either y/n")
 
@@ -55,8 +54,8 @@ def start_game(rand_number):
             elif number in guessed_list:
                 print(f"\nyou already guessed {number}")
                 print(f"{attempts} chance(s) left\n")
-            elif type(number) == int and number < rand_number and attempts != 1:
-                if number >= 0 and number <= 10:
+            elif type(number) == int and number < rand_number and attempts > 1:
+                if 10 >= number >= 0:
                     attempts -= 1
                     print(emoji.emojize("\nGuess a higher number :up_arrow:"))
                     guessed_list.append(number)
@@ -64,8 +63,8 @@ def start_game(rand_number):
                 else:
                     print("the number is not between 0 and 10")
                     print(f"{attempts} chance(s) left\n")
-            elif type(number) == int and number > rand_number and attempts != 1:
-                if number >= 0 and number <= 10:
+            elif type(number) == int and number > rand_number and attempts > 1:
+                if 10 >= number >= 0:
                     attempts -= 1
                     print(emoji.emojize("\nGuess a lower number :down_arrow:"))
                     guessed_list.append(number)
@@ -74,11 +73,15 @@ def start_game(rand_number):
                     print("the number is not between 0 and 10")
                     print(f"{attempts} chance(s) left\n")
             elif attempts <= 1:
-                attempts -= 1
-                print(f"\n{attempts} chance(s) left")
-                print(emoji.emojize("Game over :pensive_face:"))
-                print(f"The number is {rand_number}\n")
-                try_again_()
+                if 10 >= number >= 0:
+                    attempts -= 1
+                    print(f"\n{attempts} chance(s) left")
+                    print(emoji.emojize("Game over :pensive_face:"))
+                    print(f"The number is {rand_number}\n")
+                    try_again_()
+                else:
+                    print("the number is not between 0 and 10")
+                    print(f"{attempts} chance(s) left\n")
         except ValueError:
             print("You should input a number")
 
@@ -122,11 +125,9 @@ def game_rules():
             clear()
             random_number = generate_random_number()
             start_game(random_number)
-            break
         elif game_start.lower() == "n":
             clear()
             welcome()
-            break
         else:
             print("You should input either y/n")
 
@@ -164,11 +165,9 @@ SELECT AN OPTION:
                 random_number = generate_random_number()
                 clear()
                 start_game(random_number)
-                break
             elif type(chosen_option) == int and chosen_option == 2:
                 clear()
                 game_rules()
-                break
         except ValueError:
             print("Please type 1 or 2")
 
