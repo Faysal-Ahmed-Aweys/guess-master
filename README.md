@@ -29,6 +29,22 @@ If they guess the number before the tries finish, they win otherwise they lose.
 
 ## **Game Flow chart**
 ![Game Flowchart](screenshots/lucid-chart-screenshot.png)
+
+## **Deployment**
+I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
+
+1. Log in to your Heroku account or Create a new account.
+2. On the dashboard click new and then create new app.
+3. choose and enter a unique name, select the region and click create app.
+4. Select the Settings tab in the created app.
+5. Scroll down to add buildpack and click on it. 
+6. Choose python and press add buildpack. 
+7. Repeat step 5 and choose node.js.
+8. Navigate to the Deploy tab on top.
+10. Select GitHub as the deployment method and connect to GitHub.
+11. Search for the repository name of the project and click connect.
+12. I enabled automatic deploys in order to deploy each time new code is pushed to the repository.
+13. Click Deploy Branch to deploy the project.
  
 
  
