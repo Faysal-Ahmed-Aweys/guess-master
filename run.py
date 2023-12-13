@@ -61,7 +61,6 @@ def start_game(rand_number):
                     attempts -= 1
                     print(emoji.emojize("\nGuess a higher number :index_pointing_up:"))
                     guessed_list.append(number)
-                    print(guessed_list)
                     print(f"{attempts} chance(s) left\n")
                 else:
                     print("the number is not between 0 and 10")
@@ -71,7 +70,6 @@ def start_game(rand_number):
                     attempts -= 1
                     print(emoji.emojize("\nGuess a lower number :backhand_index_pointing_down:"))
                     guessed_list.append(number)
-                    print(guessed_list)
                     print(f"{attempts} chance(s) left\n")
                 else:
                     print("the number is not between 0 and 10")
