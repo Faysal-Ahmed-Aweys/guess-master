@@ -106,16 +106,16 @@ def game_rules():
                         Game Rules
                         ----------
 
-- You have to guess a number within a certain range 
+1. You have to guess a number within a certain range 
   (for example between 0 and 10 inclusive).
-- If you guess a lower number, the computer will tell you "guess a higher number"
+2. If you guess a lower number, "guess a higher number" will be displayed
   which means you need to guess a number higher than the number you guessed.
-- If you guess a higher number, the computer will tell you "guess a lower number"
+3. If you guess a higher number, "guess a lower number" will be displayed
   which means you need to guess a number lower than the number you guessed.
-- You cannot guess the same number twice.
-- You cannot guess a number outside of the range.
-- If you guess the right number you win!
-- If you fail to guess the number after a specified number of tries/chances you lose!
+4. You cannot guess the same number twice.
+5. You cannot guess a number outside of the range.
+6. If you guess the right number you win!
+7. If you fail to guess the number after a specified number of tries/chances you lose!
 
 
                     HAVE FUN!!!
