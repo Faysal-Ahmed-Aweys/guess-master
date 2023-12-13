@@ -50,7 +50,7 @@ def start_game(rand_number):
         try:
             number = int(input("Guess a number (between 0 and 10):\n"))
             if type(number) == int and number == rand_number:
-                print("\nYou got it, Well done!!")
+                print(emoji.emojize("\nYou got it, Well done!! :smiling_face_with_sunglasses::thumbs_up:"))
                 print(f"The number is {rand_number}\n")
                 try_again_()
             elif number in guessed_list:
@@ -59,7 +59,7 @@ def start_game(rand_number):
             elif type(number) == int and number < rand_number and attempts != 1:
                 if number >= 0 and number <= 10:
                     attempts -= 1
-                    print("\nHigher")
+                    print(emoji.emojize("\nGuess a higher number :index_pointing_up:"))
                     guessed_list.append(number)
                     print(guessed_list)
                     print(f"{attempts} chance(s) left\n")
@@ -69,7 +69,7 @@ def start_game(rand_number):
             elif type(number) == int and number > rand_number and attempts != 1:
                 if number >= 0 and number <= 10:
                     attempts -= 1
-                    print("\nlower")
+                    print(emoji.emojize("\nGuess a lower number :backhand_index_pointing_down:"))
                     guessed_list.append(number)
                     print(guessed_list)
                     print(f"{attempts} chance(s) left\n")
@@ -79,7 +79,7 @@ def start_game(rand_number):
             elif attempts <= 1:
                 attempts -= 1
                 print(f"\n{attempts} chance(s) left")
-                print("Game over")
+                print(emoji.emojize("Game over :pensive_face:"))
                 print(f"The number is {rand_number}\n")
                 try_again_()
         except ValueError:
@@ -150,6 +150,8 @@ def welcome():
     print(row1.center(73))
     print(row2.center(73))
     print(row3.center(73))
+
+    print(emoji.emojize(":man::speech_balloon: Hello there! up for a challenge?").center(72))
 
     print("""
 SELECT AN OPTION:
