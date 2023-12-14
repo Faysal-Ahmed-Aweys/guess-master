@@ -105,6 +105,12 @@ instead a message that they already guessed that number is displayed and the pla
 
 ![duplicate number error](screenshots/duplicate_number_error.png)
 
+# **Libraries used**
+1. random - Used to generate a random number between 0 and 10 for the player to guess. 
+2. system from OS - Used to clear the console off of outdated data from previous games
+or previous page when a new page is displayed. 
+3. emoji - Used to display emojis on the console.
+
 ## **Deployment**
 I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
 
