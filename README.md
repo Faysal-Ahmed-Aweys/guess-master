@@ -33,36 +33,76 @@ If they guess the number before the tries finish, they win otherwise they lose.
 ## **Game Features**
 
 ### **Welcome page**
+The welcome page contains the game title in ASCII art to make it unique and stand out.
+I used emojis throughout the game to make it more appealing to the players.
+On the welcome page, The players can either start the game or access the game rules to familiarise themselves with how the game works.
+
 ![welcome page](screenshots/welcome_page.png)
 
 ### **Game-rules page**
+The game-rules page explains to the players how the game is played, how to win and how one can lose.
+The players can also start the game from this page after reading the rules and understanding how to play the game.
+
 ![game rules page](screenshots/game_rules_page.png)
 
 ### **Welcome page error handling**
+On the welcome page where a player input of 1 or 2 is required, 
+the player is asked again to "type 1 or 2" if they type in a number 
+that is not 1 or 2. If they type nothing or not type a number 
+an error is raised and "please type 1 or 2" is displayed.
+ 
 ![welcome page errors](screenshots/welcome_page_errors.png)
 
 ### **Game-rules page error handling**
+On the game-rules page an error is raised and "You should input either y/n"
+is displayed if the player does not input anything or gives a wrong input. 
+
 ![game rules page errors](screenshots/game_rules_errors.png)
 
 ### **Gameplay page**
+At the start of the gameplay, the number of chances the player has to guess the number
+and the input requiring the player to guess a number are displayed. 
+ 
 ![game page](screenshots/game_page.png)
 
 ### **Gameplay page error handling**
+During the game play if you send an empty input or not input a number, 
+an error is raised and the message "You should input a number" is displayed.
+If you input a number not in the required range, a message claiming that
+the number is not in the required range is displayed and the player is asked
+to guess the number again without losing any of their chances. 
+  
 ![game page errors](screenshots/game_play_errors.png)
 
 ### **Higher hint display**
+Guessing a number lower than the number to be guessed displays a hint to the player that
+they need to "guess a higher number".
+
 ![higher hint display](screenshots/higher_hint_display.png)
 
 ### **Lower hint display**
+Guessing a number higher than the number to be guessed displays a hint to the player that
+they need to "guess a lower number".
+
 ![lower hint display](screenshots/lower_hint_display.png)
 
 ### **Win display**
+When the player wins, a message congratulating the player and a cool face emoji doing a thumbs up is displayed
+to give the feedback that the player has successfully guessed the number right. The correct number is also displayed.
+
 ![win display](screenshots/win_display.png)
 
 ### **Lose display**
+When the player loses, the message "Game over" and a pensive face emoji is displayed to give 
+the feedback that the player has failed to guess the number after using all available tries. 
+The correct number is also displayed. 
+
 ![lose display](screenshots/lose_display.png)
 
 ### **Duplicate number error handling**
+Guessing the same number twice is not accepted however, the player does not lose tries for it
+instead a message that they already guessed that number is displayed and the player can try again. 
+
 ![duplicate number error](screenshots/duplicate_number_error.png)
 
 ## **Deployment**
