@@ -47,14 +47,14 @@ def start_game(rand_number):
     while True:
         try:
             number = int(input("Guess a number (between 0 and 10):\n"))
-            if type(number) == int and number == rand_number:
+            if isinstance(number, int) and number == rand_number:
                 print(emoji.emojize("\nYou got it, Well done!! :smiling_face_with_sunglasses::thumbs_up:"))
                 print(f"The number is {rand_number}\n")
                 try_again_()
             elif number in guessed_list:
                 print(f"\nyou already guessed {number}")
                 print(f"{attempts} chance(s) left\n")
-            elif type(number) == int and number < rand_number and attempts > 1:
+            elif isinstance(number, int) and number < rand_number and attempts > 1:
                 if 10 >= number >= 0:
                     attempts -= 1
                     print(emoji.emojize("\nGuess a higher number :up_arrow:"))
@@ -63,7 +63,7 @@ def start_game(rand_number):
                 else:
                     print("the number is not between 0 and 10")
                     print(f"{attempts} chance(s) left\n")
-            elif type(number) == int and number > rand_number and attempts > 1:
+            elif isinstance(number, int) and number > rand_number and attempts > 1:
                 if 10 >= number >= 0:
                     attempts -= 1
                     print(emoji.emojize("\nGuess a lower number :down_arrow:"))
@@ -163,11 +163,11 @@ SELECT AN OPTION:
     while True:
         try:
             chosen_option = int(input("Type 1 or 2:\n"))
-            if type(chosen_option) == int and chosen_option == 1:
+            if isinstance(chosen_option, int) and chosen_option == 1:
                 random_number = generate_random_number()
                 clear()
                 start_game(random_number)
-            elif type(chosen_option) == int and chosen_option == 2:
+            elif isinstance(chosen_option, int) and chosen_option == 2:
                 clear()
                 game_rules()
         except ValueError:
