@@ -178,13 +178,17 @@ I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
 12. I enabled automatic deploys in order to deploy each time new code is pushed to the repository.
 13. Click Deploy Branch to deploy the project.
  
-### **Honourable mention** 
+### **Credits**
+#### **Honourable mention** 
 I would like to thank my mentor **David Bowers** for his incredible support throughout
 the development of my game.
 
-### **Credits**
+#### **content**
+* I used the Code Institute template to enable me to have terminal in the browser for my game to run. 
 * I read about the OS library and how to import it from [lewiskori.com](https://lewiskori.com/blog/how-to-clear-screen-in-python-terminal/).
 The idea and how to use this library was introduced to me by my mentor **David Bowers**.
+
+#### **Media and Design**
 * I made the ASCII art of my game title using [patorjk.com](https://patorjk.com/software/taag/#p=display&f=Calvin%20S&t=).
 This was also introduced to me by my mentor **David Bowers**
 * The background image is from [123rf.com](https://www.123rf.com/photo_26576728_numbers-background.html)
