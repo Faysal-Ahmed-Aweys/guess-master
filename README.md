@@ -105,11 +105,33 @@ instead a message that they already guessed that number is displayed and the pla
 
 ![duplicate number error](screenshots/duplicate_number_error.png)
 
-# **Libraries used**
+## **Libraries used**
 1. random - Used to generate a random number between 0 and 10 for the player to guess. 
 2. system from OS - Used to clear the console off of outdated data from previous games
 or previous page when a new page is displayed. 
 3. emoji - Used to display emojis on the console.
+
+## **Testing**
+### **Validation**
+
+#### **Code Institute Python Linter** 
+![CI Python Linter](screenshots/ci_py_linter.png)
+Code institute Python Linter returned some errors.
+Almost all of the errors were lines longer than 79 characters
+And one error of trailing whitespace.
+I shortened the lines and added continuation lines below them and 
+thus got no errors after testing my python code again. 
+
+![CI Python Linter Improved](screenshots/ci_py_linter_imoroved.png)
+
+![](screenshots/HTML_validator.png)
+I made some changes including adding a background image in layout.html using style tag
+and to make sure there were no errors in the HTML and CSS code i did a validation test
+which returned no errors.
+
+![](screenshots/CSS_validator.png)
+
+
 
 ## **Deployment**
 I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
