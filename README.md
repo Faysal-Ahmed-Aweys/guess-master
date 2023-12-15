@@ -115,6 +115,13 @@ instead a message that they already guessed that number is displayed and the pla
 ![duplicate number error](screenshots/duplicate_number_error.png)
 
 ## **Future-Enhancements**
+I believe i have added everything I thought was necessary to include in the game. However, 
+the following features will make the game much more fun. 
+
+1. Let the player select the range within which they can guess the number and based on that range,
+give the player a certain number of tries so the players can challenge themselves more.
+2. A multiplayer version of the game where one player gets a chance to guess the number and if they fail,
+the other player gets a chance to guess the number and whoever guesses the number first wins. 
 
 ## **Libraries used**
 1. random - Used to generate a random number between 0 and 10 for the player to guess. 
