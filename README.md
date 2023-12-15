@@ -32,6 +32,11 @@ If they guess the number before the tries finish, they win otherwise they lose.
 * Display the range of the number to be guessed and display the number if the player is right or if the tries run out. 
 
 ## **Game Flow chart**
+
+The game flow chart at the planning stage did not have the duplicate guess condition,
+I have added that condition during the game development process as it would 
+make the game more logical and fun.
+
 ![Game Flowchart](screenshots/lucid-chart-screenshot.png)
 
 ## **Game Features**
@@ -109,6 +114,8 @@ instead a message that they already guessed that number is displayed and the pla
 
 ![duplicate number error](screenshots/duplicate_number_error.png)
 
+## **Future-Enhancements**
+
 ## **Libraries used**
 1. random - Used to generate a random number between 0 and 10 for the player to guess. 
 2. system from OS - Used to clear the console off of outdated data from previous games
@@ -165,7 +172,7 @@ I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
 13. Click Deploy Branch to deploy the project.
  
 ### **Honourable mention** 
-I would like to thank my mentor David Bowers for his incredible support throughout
+I would like to thank my mentor **David Bowers** for his incredible support throughout
 the development of my game.
 
 ### **Credits**
