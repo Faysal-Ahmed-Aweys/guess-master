@@ -4,6 +4,10 @@ Guess master is a game where the player tries to guess the number that the compu
 The computer tells them the range and if they guess a number higher than the number that computer is thinking of, the computer tells them to go lower and if they guess a lower number, the computer tells them to go higher.
 If they guess the number before the tries finish, they win otherwise they lose.
 
+![Guess master](screenshots/Guess_master.png)
+
+[Click here to play the game](https://guess-master-3f7c0042ba68.herokuapp.com/)
+
 ## **Planning stage** 
 ### **Target Audience**
 * Anyone who likes to play guess-the-number games.
@@ -171,5 +175,6 @@ The idea and how to use this library was introduced to me by my mentor **David B
 This was also introduced to me by my mentor **David Bowers**
 * The background image is from [123rf.com](https://www.123rf.com/photo_26576728_numbers-background.html)
 * The favicon image is from [amazon.co.uk](https://www.amazon.co.uk/JACTheCreator-Guess-The-Number/dp/B0797Z83HK)
-
+* I used [Lucid.app](https://lucid.app/lucidchart/d1802f2b-a899-4c97-9e82-75011db4ea65/edit?beaconFlowId=E01F33C4C6948D91&invitationId=inv_66e53440-8220-4bbd-bac5-c1db3f56feb8&page=0_0#)
+to make the game flowchart.
  
