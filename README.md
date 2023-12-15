@@ -112,8 +112,19 @@ or previous page when a new page is displayed.
 3. emoji - Used to display emojis on the console.
 
 ## **Testing**
-### **Validation**
+### **Manual Testing**
+* Throughout the game development and after development, 
+I tested the game manually on my Mac terminal and Heroku app terminal.
+One of the issues i found was when the player has one chance left to guess 
+the number, the input was not being checked if it was between 0 and 10 inclusive. 
+I fixed this by adding a conditional statement to check for and validate the input.
+* During the game development i used print statements to test the correct output 
+is being displayed.
 
+#### **Unfixed bugs**
+The game works with no errors or bugs. There are no unfixed bugs.
+
+### **Validation**
 #### **Code Institute Python Linter** 
 ![CI Python Linter](screenshots/ci_py_linter.png)
 Code institute Python Linter returned some errors.
@@ -149,5 +160,16 @@ I took these steps to deploy the game to [Heroku.com](https://www.heroku.com)
 12. I enabled automatic deploys in order to deploy each time new code is pushed to the repository.
 13. Click Deploy Branch to deploy the project.
  
+### **Honourable mention** 
+I would like to thank my mentor David Bowers for his incredible support throughout
+the development of my game.
+
+### **Credits**
+* I read about the OS library and how to import it from [lewiskori.com](https://lewiskori.com/blog/how-to-clear-screen-in-python-terminal/).
+The idea and how to use this library was introduced to me by my mentor **David Bowers**.
+* I made the ASCII art of my game title using [patorjk.com](https://patorjk.com/software/taag/#p=display&f=Calvin%20S&t=).
+This was also introduced to me by my mentor **David Bowers**
+* The background image is from [123rf.com](https://www.123rf.com/photo_26576728_numbers-background.html)
+* The favicon image is from [amazon.co.uk](https://www.amazon.co.uk/JACTheCreator-Guess-The-Number/dp/B0797Z83HK)
 
  
